@@ -1,0 +1,17 @@
+:root {
+    --pagebg: #011212;
+    --ballbg: #ff8800;
+    --ballwh: 100px;
+    --ballbrd: 50px;
+}
+
+body {
+    background-color: var(--pagebg);
+}
+
+.ball {
+    width: var(--ballwh);
+    height: var(--ballwh);
+    background-color: var(--ballbg);
+    border-radius: var(--ballbrd);
+}
