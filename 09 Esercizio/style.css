@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.card-folder {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+
+
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: linear-gradient(#ABABAB, #F2F2F2);
+    border-radius: 20px;
+    width: 250px;
+    padding: 3px 5px 40px 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 3px 0px rgba(201, 191, 191, 0.5);
+
+}
+
+.first-row {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    max-height: fit-content;
+    /*     padding-top: 5px;  
+    padding-left: 5px; 
+    padding-right: 10px; */
+}
+
+.d-flex {
+    display: flex;
+}
+
+div img {
+    padding-top: 2px;
+}
+
+div p {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 11px;
+
+}
+
+div p:nth-of-type(2) {
+    margin-top: 1px;
+    color: white;
+}
+
+.top-right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+figure {
+    margin: 0 -5px;
+}
+
+.second-row {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    /*     padding: 15px; */
+}
+
+.second-row div img {
+    max-height: 15px;
+}
+
+.second-row div img:first-child {
+    padding: 15px 15px 7px 15px;
+}
+
+.second-row div img:last-child {
+    padding-top: 15px;
+}
+
+
+.d-flex div p:first-child {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.third-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 376px) {
+
+    .card-folder {
+        justify-content: space-between;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 769px) {
+
+    .card-folder {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .card {
+        margin-right: 30px;
+    }
+
+    .card:last-of-type {
+        margin-right: 0;
+    }
+
+}
